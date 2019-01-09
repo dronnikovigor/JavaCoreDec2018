@@ -2,7 +2,7 @@ package task4;
 
 import java.util.Random;
 
-public class Maximum {
+class Maximum {
     private double[] arr;
     private double rangeMin = -100;
     private double rangeMax = 100;
@@ -15,7 +15,7 @@ public class Maximum {
         }
     }
 
-    public double countMax() {
+    double countMax() {
         double max = Double.MIN_VALUE;
         for (int i = 0; i < arr.length / 2; i++) {
             double val;

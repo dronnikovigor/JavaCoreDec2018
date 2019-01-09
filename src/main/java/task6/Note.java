@@ -1,17 +1,29 @@
 package task6;
 
-public class Note {
+class Note {
     private String text;
 
+    /**
+     * Constructor for Note
+     * @param text text for Note
+     */
     Note(String text) {
         this.text = text;
     }
 
-    public String getText() {
+    /**
+     * Get text from Note
+     * @return text from Note
+     */
+    String getText() {
         return text;
     }
 
-    public void setText(String text) {
+    /**
+     * Set text for Note
+     * @param text text for Note
+     */
+    void setText(String text) {
         this.text = text;
     }
 }
