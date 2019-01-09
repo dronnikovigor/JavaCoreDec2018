@@ -4,18 +4,18 @@ public class Count {
     private int len;
     private double[] arr;
 
-    public Count(int len) {
+    Count(int len) {
         this.len = len;
         arr = new double[len];
     }
 
-    public void count() {
+    void count() {
         for (int i = 0; i < len; i++) {
             arr[i] = 1.0 / Math.pow((i + 1), 2);
         }
     }
 
-    public int getMinimum(double eps) {
+    int getMinimum(double eps) {
         for (int i = 0; i < len; i++) {
             if (arr[i] < eps)
                 return i;
