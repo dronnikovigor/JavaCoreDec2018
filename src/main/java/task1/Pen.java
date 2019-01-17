@@ -2,28 +2,19 @@ package task1;
 
 import java.util.Objects;
 
-enum Color {
-    RED,
-    GREEN,
-    BLUE,
-    BLACK
-}
-
-public class Pen {
-    private String brand;
+public class Pen extends Stationery {
     private Color color;
     private double ink;
-    private double price;
+
+    {
+        name = "Pen";
+    }
 
     public Pen(String brand, Color color, double ink, double price) {
         this.brand = brand;
         this.color = color;
         this.ink = ink;
         this.price = price;
-    }
-
-    public void setBrand(String brand) {
-        this.brand = brand;
     }
 
     public void setColor(Color color) {
@@ -34,14 +25,6 @@ public class Pen {
         this.ink = ink;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public String getBrand() {
-        return brand;
-    }
-
     public Color getColor() {
         return color;
     }
@@ -50,18 +33,13 @@ public class Pen {
         return ink;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Pen pen = (Pen) o;
         return Double.compare(pen.ink, ink) == 0 &&
-                Double.compare(pen.price, price) == 0 &&
-                Objects.equals(brand, pen.brand) &&
+                Objects.equals(name, pen.name) &&
                 color == pen.color;
     }
 
@@ -73,9 +51,10 @@ public class Pen {
     @Override
     public String toString() {
         return "Pen{" +
-                "brand='" + brand + '\'' +
-                ", color=" + color +
+                "color=" + color +
                 ", ink=" + ink +
+                ", name='" + name + '\'' +
+                ", brand='" + brand + '\'' +
                 ", price=" + price +
                 '}';
     }
