@@ -1,4 +1,4 @@
-package task2;
+package task3;
 
 import java.util.Objects;
 
@@ -56,5 +56,10 @@ public class Pencil extends Stationery {
                 ", brand='" + brand + '\'' +
                 ", price=" + price +
                 '}';
+    }
+
+    @Override
+    public void draw(String object) {
+        System.out.println(object + " was drawn using "+ name+".");
     }
 }

@@ -1,11 +1,9 @@
 package task2;
 
-import task1.Stationery;
-
 import java.util.ArrayList;
 
 public class Desktop {
-    ArrayList<Stationery> desktop;
+    private ArrayList<Stationery> desktop;
 
     public Desktop() {
         desktop = new ArrayList<>();

@@ -1,8 +1,6 @@
 package task2;
 
 import org.junit.Test;
-import task1.Color;
-import task1.Pen;
 
 public class DesktopTest {
 
