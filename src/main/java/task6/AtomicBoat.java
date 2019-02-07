@@ -1,8 +1,11 @@
 package task6;
 
+import task7.CustomAnnotation;
+
 /**
  * Class describes Atomic Boat
  */
+@CustomAnnotation(name = "Atomic Boat")
 class AtomicBoat {
     private Engine engineLeft;
     private Engine engineRight;
